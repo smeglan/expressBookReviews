@@ -50,7 +50,7 @@ consumer_router.get("/:isbn&:author&:title", async (req, res) => {
         `;
 		res.status(200).send(message);
 	} catch (error) {
-		res.status(501).send(error)
+		res.status(501).send(error);
 	}
 });
 module.exports = consumer_router;
